@@ -1,3 +1,8 @@
+import sys
+sys.path.append("/usr/local/airflow/core/")
+sys.path.append("/usr/local/airflow/config/")
+sys.path.append("/usr/local/airflow/")
+
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta

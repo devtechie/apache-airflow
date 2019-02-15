@@ -1,10 +1,11 @@
 import sys
 
 sys.path.append("..")
-sys.path.append("/Users/nvishwakarma/Downloads/airflow-datapipeline-demo1/")
-sys.path.append("/Users/nvishwakarma/Downloads/airflow-datapipeline-demo1/Movie/")
-sys.path.append("/Users/nvishwakarma/Downloads/airflow-datapipeline-demo1/src/")
-sys.path.append("/Users/nvishwakarma/Downloads/airflow-datapipeline-demo1/src/core/")
+sys.path.append("/usr/local/airflow/core/")
+sys.path.append("/usr/local/airflow/config/")
+sys.path.append("/usr/local/airflow/Movie/")
+sys.path.append("/usr/local/airflow/utils/")
+sys.path.append("/usr/local/airflow/")
 
 
 from core.execute import core_aggregation, core_db_insert_to_db, core_get_data

@@ -16,11 +16,13 @@ services:
             - LOAD_EX=n
             - EXECUTOR=Local
         volumes:
-            - ./airflow-datapipeline-demo1/apache-airflow/src/dags:/usr/local/airflow/dags
+            - ./apache-airflow/src/dags:/usr/local/airflow/dags
+            - ./apache-airflow/Movie:/usr/local/airflow/Movie
+            - ./apache-airflow/src/utils:/usr/local/airflow/utils
             # Uncomment to include custom plugins
 #            - ./plugins:/usr/local/airflow/plugins
         ports:
-            - "8083:8080"
+            - "8088:8080"
         command: webserver
         healthcheck:
             test: ["CMD-SHELL", "[ -f /usr/local/airflow/airflow-webserver.pid ]"]

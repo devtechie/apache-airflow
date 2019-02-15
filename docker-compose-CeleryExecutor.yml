@@ -30,8 +30,8 @@ services:
             # - POSTGRES_DB=airflow
             # - REDIS_PASSWORD=redispass
         volumes:
-            - ./airflow-datapipeline-demo1/apache-airflow/src/dags:/usr/local/airflow/dags
-            - ./airflow-datapipeline-demo1/apache-airflow/src/core:/usr/local/airflow/core
+            - ./apache-airflow/src/dags:/usr/local/airflow/dags
+            - ./apache-airflow/src/core:/usr/local/airflow/core
             # Uncomment to include custom plugins
             # - ./plugins:/usr/local/airflow/plugins
         ports:
