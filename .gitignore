@@ -1,0 +1,5 @@
+.idea/
+Movie/__pycache__/
+src/dags/__pycache__/
+src/utils/__pycache__/
+.gitignore
